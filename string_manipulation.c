@@ -3,8 +3,12 @@
 
 int main(){
 	char text[]="hello";
+	printf("text %s\n",text);
 	char text1[20]="Monday";
+	printf("text 1 %s\n",text1);
 	char text2[20]="Wed";
+	printf("text2 %s\n",text2);
+
 	//printf("%s",text1+text2);
 
 	char *text3="Tuesday"; //String literal cannot be modified
@@ -29,7 +33,7 @@ int main(){
 	strncpy(strncpy1,strncpy2,sizeof(strncpy1)); 
 	/* At this point since null terminator will not be found in first 10 chars of strncpy2, null terminator wont be added */
 
-	strncpy[9]="\0";
+	strncpy1[9]="\0";
 
 	printf("Using strncpy %s\n", strncpy1);
 	printf("Using strncpy %s\n", strncpy2);
