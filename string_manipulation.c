@@ -33,7 +33,7 @@ int main(){
 	strncpy(strncpy1,strncpy2,sizeof(strncpy1)); 
 	/* At this point since null terminator will not be found in first 10 chars of strncpy2, null terminator wont be added */
 
-	strncpy1[9] ="\0";
+	//strncpy1[9] ='\0';
 
 	printf("Using strncpy %s\n", strncpy1);
 	printf("Using strncpy %s\n", strncpy2);
