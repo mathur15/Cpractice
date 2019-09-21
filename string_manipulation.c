@@ -5,10 +5,10 @@ int main(){
 	char text[]="hello";
 	char text1[20]="Monday";
 	char text2[20]="Wed";
-	printf("%s",text1+text2);
+	//printf("%s",text1+text2);
 
 	char *text3="Tuesday"; //String literal cannot be modified
-	text3[0]="z"; //Bus error
+	//text3[0]="z"; //Bus error
 
 	printf("The length of the string is %lu\n", strlen(text3));
 	printf("%s",text3);
@@ -24,7 +24,7 @@ int main(){
 	//copying using strncpy
 
 	char strncpy1[10];
-	char strncpy2[20]= "I love university of Toronto";
+	char strncpy2[40]= "I love university of Toronto";
 
 	strncpy(strncpy1,strncpy2,sizeof(strncpy1)); 
 	/* At this point since null terminator will not be found in first 10 chars of strncpy2, null terminator wont be added */
