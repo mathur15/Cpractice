@@ -8,7 +8,7 @@ int main(int argc, char**argv){
 	FILE* fp;
         char s[80];
         printf("%s %s\n",argv[1],argv[2]);
-        fp=fopen(argv[1],"r");
+        fp=fopen(argv[1],"r");//system call so perror will set a value to errno
         if(fp==NULL){
 		perror("test1:");
         }
